@@ -10,7 +10,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             background-color: #181818;
             color: #f0f0f0;
@@ -18,34 +17,44 @@
             line-height: 1.6;
             padding: 20px;
         }
-
         .container {
             max-width: 800px;
             margin: 0 auto;
         }
-
         header {
             text-align: center;
             margin-bottom: 40px;
             border-bottom: 2px solid #333;
             padding-bottom: 20px;
+            position: relative;
         }
-
+        .admin-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #444;
+            color: #f0f0f0;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+        .admin-btn:hover {
+            background-color: #555;
+        }
         h1 {
             color: #f0f0f0;
             font-size: 2.5em;
             margin-bottom: 10px;
         }
-
         .subtitle {
             color: #888;
             font-size: 1.2em;
         }
-
         .post-list {
             list-style: none;
         }
-
         .post-item {
             background-color: #222;
             margin-bottom: 20px;
@@ -54,35 +63,29 @@
             border-left: 4px solid #555;
             transition: all 0.3s ease;
         }
-
         .post-item:hover {
             background-color: #2a2a2a;
             border-left-color: #777;
             transform: translateX(5px);
         }
-
         .post-title {
             color: #f0f0f0;
             font-size: 1.5em;
             margin-bottom: 10px;
             text-decoration: none;
         }
-
         .post-title:hover {
             color: #fff;
         }
-
         .post-date {
             color: #888;
             font-size: 0.9em;
             margin-bottom: 15px;
         }
-
         .post-excerpt {
             color: #ccc;
             line-height: 1.7;
         }
-
         .tag {
             display: inline-block;
             background-color: #333;
@@ -92,7 +95,6 @@
             border-radius: 3px;
             font-size: 0.8em;
         }
-
         footer {
             text-align: center;
             margin-top: 50px;
@@ -105,14 +107,14 @@
 <body>
     <div class="container">
         <header>
+            <a href="admin/" class="admin-btn">글쓰기 (Admin)</a>
             <h1>Dark Blog</h1>
             <p class="subtitle">개발 학습 기록 블로그</p>
         </header>
-
         <main>
             <ul class="post-list">
                 <li class="post-item">
-                    <a href="#" class="post-title">JavaScript ES6+ 문법 정리</a>
+                    <a class="post-title" href="#">JavaScript ES6+ 문법 정리</a>
                     <div class="post-date">2025년 9월 4일</div>
                     <p class="post-excerpt">
                         ES6에서 추가된 새로운 문법들을 학습했습니다. Arrow Function, Destructuring, Template Literals, Promise 등의 
@@ -125,9 +127,8 @@
                         <span class="tag">Frontend</span>
                     </div>
                 </li>
-
                 <li class="post-item">
-                    <a href="#" class="post-title">React Hooks 심화 학습</a>
+                    <a class="post-title" href="#">React Hooks 심화 학습</a>
                     <div class="post-date">2025년 9월 2일</div>
                     <p class="post-excerpt">
                         useState, useEffect를 넘어서 useReducer, useContext, useMemo 등의 고급 Hooks를 학습했습니다. 
@@ -142,9 +143,8 @@
                 </li>
             </ul>
         </main>
-
         <footer>
-            <p>&copy; 2025 Dark Blog. 모든 학습 내용은 개인적인 기록입니다.</p>
+            <p>© 2025 Dark Blog. 모든 학습 내용은 개인적인 기록입니다.</p>
         </footer>
     </div>
 </body>
