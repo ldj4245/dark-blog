@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Blog - 학습 기록</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #181818;
+            color: #f0f0f0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #f0f0f0;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 1.2em;
+        }
+
+        .post-list {
+            list-style: none;
+        }
+
+        .post-item {
+            background-color: #222;
+            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #555;
+            transition: all 0.3s ease;
+        }
+
+        .post-item:hover {
+            background-color: #2a2a2a;
+            border-left-color: #777;
+            transform: translateX(5px);
+        }
+
+        .post-title {
+            color: #f0f0f0;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .post-title:hover {
+            color: #fff;
+        }
+
+        .post-date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .post-excerpt {
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #333;
+            color: #f0f0f0;
+            padding: 3px 8px;
+            margin: 5px 5px 0 0;
+            border-radius: 3px;
+            font-size: 0.8em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dark Blog</h1>
+            <p class="subtitle">개발 학습 기록 블로그</p>
+        </header>
+
+        <main>
+            <ul class="post-list">
+                <li class="post-item">
+                    <a href="#" class="post-title">JavaScript ES6+ 문법 정리</a>
+                    <div class="post-date">2025년 9월 4일</div>
+                    <p class="post-excerpt">
+                        ES6에서 추가된 새로운 문법들을 학습했습니다. Arrow Function, Destructuring, Template Literals, Promise 등의 
+                        기능들을 실제 프로젝트에 적용해보면서 코드가 훨씬 간결하고 읽기 쉬워졌습니다. 
+                        특히 비동기 처리에서 async/await를 사용하니 콜백 지옥을 피할 수 있어 좋았습니다.
+                    </p>
+                    <div>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">ES6</span>
+                        <span class="tag">Frontend</span>
+                    </div>
+                </li>
+
+                <li class="post-item">
+                    <a href="#" class="post-title">React Hooks 심화 학습</a>
+                    <div class="post-date">2025년 9월 2일</div>
+                    <p class="post-excerpt">
+                        useState, useEffect를 넘어서 useReducer, useContext, useMemo 등의 고급 Hooks를 학습했습니다. 
+                        복잡한 상태 관리가 필요한 컴포넌트에서 useReducer를 사용하니 코드 구조가 더 명확해졌고, 
+                        불필요한 렌더링을 방지하기 위해 useMemo와 useCallback을 적절히 활용하는 방법을 익혔습니다.
+                    </p>
+                    <div>
+                        <span class="tag">React</span>
+                        <span class="tag">Hooks</span>
+                        <span class="tag">State Management</span>
+                    </div>
+                </li>
+            </ul>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Dark Blog. 모든 학습 내용은 개인적인 기록입니다.</p>
+        </footer>
+    </div>
+</body>
+</html>
